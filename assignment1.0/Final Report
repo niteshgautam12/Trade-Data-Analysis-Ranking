@@ -1,0 +1,48 @@
+**Binance Trade Data Analysis & Ranking System**  
+
+1. Introduction
+This report presents an analysis of 90 days of historical trade data from multiple Binance accounts. The goal of the project was to compute key financial metrics and develop a ranking system to evaluate account performance based on profitability and risk factors. The analysis helps in identifying the most successful trading strategies and risk management practices.
+
+2. Data Processing 
+- The dataset contained trade history for multiple Binance accounts.  
+- Data Cleaning: Removed invalid trade records and accounts without trade history.  
+- Missing Values: Addressed missing values to ensure data consistency.  
+- Data Parsing:Converted trade history from JSON format for structured analysis.  
+
+3. Feature Engineering & Financial Metrics 
+To evaluate the performance of each account, the following financial metrics were computed:  
+- Return on Investment (ROI): Measures profitability relative to investment.  
+- Profit and Loss (PnL): Total earnings or losses from all trades.  
+- Sharpe Ratio: Risk-adjusted return, calculated as the mean return divided by standard deviation.  
+- Maximum Drawdown (MDD): Largest percentage drop from peak equity.  
+- Win Rate: Percentage of profitable trades.  
+- Win Positions & Total Positions: Number of successful and total trades for each account.  
+
+4. Ranking Algorithm 
+A weighted scoring system** was developed to rank accounts based on multiple performance indicators:  
+- ROI (40%) – Prioritizing profitability.  
+- PnL (30%) – Evaluating total earnings.  
+- Sharpe Ratio (20%) – Assessing risk-adjusted returns.  
+- MDD (-10%) – Penalizing high risk.  
+- Win Rate (10%) – Considering trade success rate.  
+
+5. Data Visualization & Insights
+To better understand performance trends, the following visualizations were generated:  
+- Bar Chart: Top 20 accounts ranked by score.  
+- Scatter Plot (ROI vs. PnL): Identifying high-performing accounts.  
+- Sharpe Ratio Distribution: Analyzing risk-adjusted returns.  
+- Win Rate vs. Maximum Drawdown: Evaluating risk versus trade success.  
+
+6. Results & Conclusion 
+- The top 20 accounts were successfully ranked based on the scoring algorithm.  
+- A correlation was observed between high ROI and lower drawdowns, suggesting better risk management.  
+- Accounts with higher Sharpe Ratios performed better consistently.  
+- The project provides valuable insights into trading performance and can be extended further for **real-time trade analysis**.  
+
+7. Future Enhancements  
+- Integration of real-time Binance API for live trade analysis.  
+- Implementing machine learning models to predict future trade success.  
+- Enhancing ranking algorithms with **reinforcement learning.  
+
+This report provides a structured approach to understanding Binance trade data and ranking accounts effectively. The methodology can be further expanded for broader financial applications.
+
